@@ -1,0 +1,40 @@
+@import "../../mixins.scss";
+.searchResultsPage {
+    min-height: 700px;
+    padding-top: 100px;
+    .resultNotFound {
+        font-size: 24px;
+        color: var(--black-light);
+    }
+    .pageTitle {
+        font-size: 24px;
+        line-height: 34px;
+        color: white;
+        margin-bottom: 25px;
+    }
+    .content {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+        margin-bottom: 50px;
+        @include md {
+            gap: 20px;
+        }
+        .movieCard {
+            .posterBlock {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.resultNotFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .resultNotFound img {
+    width: 200px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
